@@ -1,0 +1,76 @@
+.textarea {
+  border: 2px solid blue;
+  font-family: Georgia;
+  font-size: 30px;
+  padding: 15px 15px;
+  border-radius: 13px;
+}
+
+
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 36px;
+  padding-right: 50px;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Enter the Problem....";
+  color: gray;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Heebo", sans-serif;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-width: medium;
+  
+}
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 9px;
+  cursor: pointer;
+  border-radius: 15px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+input.center {
+  margin: 45px 342px;
+}
+.image-upload > input{
+    display: none;
+}
+
+.image-upload{
+    width: 80px;
+    cursor: pointer;
+}
+
+#file-input{
+  display: none;
+}
+.container{
+  position: relative;
+  padding-right: 45px
+}
+
+i.fa-solid.fa-camera.fa-2xl {
+  position: absolute;
+  top: 34px;
+  right: 62px;
+}

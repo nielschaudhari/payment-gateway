@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Search Box</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1813edd5e9.js" crossorigin="anonymous"></script>
+  <script>
+    function passvalue()
+      {
+        var firstname=document.getElementById("txt").textContent;
+        var inputImage=document.getElementById("file-input").value;
+        localStorage.setItem("textvalue",firstname);
+        localStorage.setItem("imageURL",inputImage);
+        return false;
+      }
+    </script>
+    
+</head>
+<body>
+
+
+
+  <div class="container">
+  <form action="Localstorage.html">
+  <span id="txt" class="textarea" role="textbox" contenteditable placeholder="Enter Your Problem ..."></span>
+    <label class="image-upload" for="file-input">
+    <i class="fa-solid fa-camera fa-2xl"></i>
+    </label>
+
+  <input id="file-input" type="file"/>
+  <input class="center" type="submit" value="Get answer" onClick="passvalue();"/>
+  </form>
+  </div>
+
+ 
+</body>
+</html>
+
